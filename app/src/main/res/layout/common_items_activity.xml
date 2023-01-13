@@ -4,61 +4,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_list"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/fst_item"
-        android:text="@string/cheese"/>
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/fst_item"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/scnd_item"
-        android:text="@string/rice"/>
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@id/scnd_item"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="50dp"
-        android:id="@+id/thrd_item"
-        android:text="@string/apples"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_item"
-        app:layout_constraintLeft_toRightOf="@id/fst_item"
-        app:layout_constraintTop_toTopOf="@id/fst_item"
-        android:id="@+id/bt_cheese"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_item"
-        app:layout_constraintLeft_toRightOf="@id/scnd_item"
-        app:layout_constraintTop_toTopOf="@id/scnd_item"
-        android:id="@+id/bt_rice"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_item"
-        app:layout_constraintLeft_toRightOf="@id/thrd_item"
-        app:layout_constraintTop_toTopOf="@id/thrd_item"
-        android:id="@+id/bt_apples"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

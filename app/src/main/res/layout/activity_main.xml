@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginStart="50dp"
         android:id="@+id/tv_list"
-        android:textSize="20sp"/>
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -24,6 +24,6 @@
         android:text="@string/add_item"
         android:layout_marginStart="50dp"
         android:id="@+id/bt_add_item"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
