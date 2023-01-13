@@ -4,27 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/tv_item"
         tools:text="default"
         android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
         android:textSize="30sp" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/add_item"
         app:layout_constraintLeft_toRightOf="@id/tv_item"
         app:layout_constraintTop_toTopOf="@id/tv_item"
         android:id="@+id/bt_item"
-        android:layout_marginStart="30dp" />
+        android:layout_marginStart="30dp"
+        android:src="@android:drawable/ic_menu_add" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
